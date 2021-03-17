@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		ABE113EF25AE243A00932A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE113EE25AE243A00932A32 /* AppDelegate.swift */; };
 		ABE113F125AE243A00932A32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE113F025AE243A00932A32 /* SceneDelegate.swift */; };
-		ABE113F325AE243A00932A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE113F225AE243A00932A32 /* ViewController.swift */; };
+		ABE113F325AE243A00932A32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE113F225AE243A00932A32 /* LoginViewController.swift */; };
 		ABE113F625AE243A00932A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE113F425AE243A00932A32 /* Main.storyboard */; };
 		ABE113F825AE243D00932A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE113F725AE243D00932A32 /* Assets.xcassets */; };
 		ABE113FB25AE243D00932A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE113F925AE243D00932A32 /* LaunchScreen.storyboard */; };
 		ABE1140625AE243D00932A32 /* LoginATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1140525AE243D00932A32 /* LoginATests.swift */; };
 		ABE1141125AE243D00932A32 /* LoginAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1141025AE243D00932A32 /* LoginAUITests.swift */; };
+		ABE1142525AE280400932A32 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1142425AE280400932A32 /* RegistroViewController.swift */; };
+		ABE1142A25AE2A6100932A32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1142925AE2A6100932A32 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		ABE113EB25AE243A00932A32 /* LoginA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE113EE25AE243A00932A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE113F025AE243A00932A32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABE113F225AE243A00932A32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABE113F225AE243A00932A32 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ABE113F525AE243A00932A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE113F725AE243D00932A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE113FA25AE243D00932A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		ABE1140C25AE243D00932A32 /* LoginAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE1141025AE243D00932A32 /* LoginAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAUITests.swift; sourceTree = "<group>"; };
 		ABE1141225AE243D00932A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE1142425AE280400932A32 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		ABE1142925AE2A6100932A32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				ABE113EE25AE243A00932A32 /* AppDelegate.swift */,
 				ABE113F025AE243A00932A32 /* SceneDelegate.swift */,
-				ABE113F225AE243A00932A32 /* ViewController.swift */,
+				ABE113F225AE243A00932A32 /* LoginViewController.swift */,
 				ABE113F425AE243A00932A32 /* Main.storyboard */,
 				ABE113F725AE243D00932A32 /* Assets.xcassets */,
 				ABE113F925AE243D00932A32 /* LaunchScreen.storyboard */,
 				ABE113FC25AE243D00932A32 /* Info.plist */,
+				ABE1142425AE280400932A32 /* RegistroViewController.swift */,
+				ABE1142925AE2A6100932A32 /* User.swift */,
 			);
 			path = LoginA;
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE113F325AE243A00932A32 /* ViewController.swift in Sources */,
+				ABE113F325AE243A00932A32 /* LoginViewController.swift in Sources */,
+				ABE1142525AE280400932A32 /* RegistroViewController.swift in Sources */,
 				ABE113EF25AE243A00932A32 /* AppDelegate.swift in Sources */,
+				ABE1142A25AE2A6100932A32 /* User.swift in Sources */,
 				ABE113F125AE243A00932A32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
